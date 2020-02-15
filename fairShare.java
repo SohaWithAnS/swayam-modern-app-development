@@ -198,3 +198,169 @@ public class fairShare
     }
 }
 
+/*
+OUTPUT :
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5
+expense f3 100
+expense f2 150
+expense f5 600
+expense f1 225
+expense f3 117
+report  f5
+end
+361.60
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f4 f5
+expense f4 127
+expense f1 89
+expense f4 529
+expense f3 327
+expense f2 208
+report  f3
+report  f5
+end
+Error
+Error
+-238.25
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5
+expense f3 100
+expense f2 150
+expense f5 600
+expense f1 225
+expense f3 117
+report  f5
+end
+361.60
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5
+expense f4  700
+expense f1   50
+expense f4  500
+expense f3  225
+expense f2 1050
+report  f3
+report  f2
+report  f4
+end
+-280.00
+545.00
+695.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2
+expense f1  700
+expense f1   50
+expense f2  500
+expense f1  225
+expense f2 1050
+report  f1
+report  f2
+end
+-287.50
+287.50
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f9 f8 f7 f6 f5
+expense f8 -100
+expense f9   50
+expense f7  500
+expense f6  225
+expense f8  355
+report  f8
+report  f9
+end
+49.00
+-156.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f9 f8 f7 f6 f5
+expense f8  100
+expense f9   50
+expense f7  500
+expense f6  225
+expense f8  355
+report  f8
+report  f9
+report  f4
+end
+209.00
+-196.00
+Error
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f9 f8 f7 f6 f5
+expense  f8  50000010025
+expense  f9   1078839070
+expense  f7  44294967295
+expense  f6   4294967300
+report   f8
+report   f9
+end
+30,066,253,287.00
+-18,854,917,668.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f9 f8 f7 f6 f5
+expense  f8  50000010025
+expense  f9   1078839070
+expense  f7  44294967295
+expense  f6   4294967300
+report   f8
+report   f9
+end
+30066253287.00
+-18854917668.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5
+expense  f4  127
+expense  f1   89
+expense  f4  529
+expense  f3  327
+expense  f2  208
+report   f3
+report   f1
+report   f5
+end
+71.00
+-167.00
+-256.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5 f6
+expense  f4  127
+expense  f1   89
+expense  f4  529
+expense  f3  327
+expense  f2  208
+report   f3
+report   f6
+report   f5
+end
+113.67
+-213.33
+-213.33
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f4 f5
+expense  f4  127
+expense  f1   89
+expense  f4  529
+expense  f3  327
+expense  f2  208
+report   f3
+report   f5
+end
+Error
+Error
+-238.25
+soha@soha-Inspiron-5559:~/SwayamCourse$ cd /home/soha/SwayamCourse ; /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -cp /home/soha/.config/Code/User/workspaceStorage/7c876ab31e2762bede43822d98ec53cc/redhat.java/jdt_ws/jdt.ls-java-project/bin fairShare 
+register f1 f2 f3 f4 f5
+expense  f3  927
+expense  f2  989
+expense  f4  529
+expense  f3  627
+expense  f1  248
+report   f3
+report   f1
+report   f5
+end
+890.00
+-416.00
+-664.00
+soha@soha-Inspiron-5559:~/SwayamCourse$ 
+*/
